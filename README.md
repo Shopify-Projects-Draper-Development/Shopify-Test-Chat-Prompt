@@ -1,1 +1,0 @@
-# Shopify-Test-Chat-Prompt
