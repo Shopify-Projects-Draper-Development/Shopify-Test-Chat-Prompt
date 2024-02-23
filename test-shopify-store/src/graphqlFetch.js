@@ -32,6 +32,8 @@ const GET_PRODUCTS = gql`
 function ProductList() {
     const { loading, error, data } = useQuery(GET_PRODUCTS, { client });
 
+    console.log("full error, graphqlFetch.js", error);
+
     if(loading) return <p>Loading...</p>;
     if(error) return <p>Error: {error.message}</p>;
 
